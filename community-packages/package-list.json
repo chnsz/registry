@@ -1,0 +1,8 @@
+{
+  "include": [
+    {
+      "repoSlug": "huaweicloud/pulumi-huaweicloud",
+      "schemaFile": "provider/cmd/pulumi-resource-huaweicloud/schema.json"
+    }
+  ]
+}

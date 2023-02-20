@@ -1,0 +1,14 @@
+category: Cloud
+component: false
+description: A Pulumi package for creating and managing Huaweicloud cloud resources.
+featured: false
+logo_url: https://console-static.huaweicloud.com/static/authui/20210202115135/public/custom/images/logo-en.svg
+name: huaweicloud
+native: false
+package_status: public_preview
+publisher: Huawei
+repo_url: https://github.com/huaweicloud/pulumi-huaweicloud
+schema_file_path: provider/cmd/pulumi-resource-huaweicloud/schema.json
+title: huaweicloud
+updated_on: 1668051916
+version: v0.0.3

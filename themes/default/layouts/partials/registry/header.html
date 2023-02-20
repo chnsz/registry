@@ -1,0 +1,148 @@
+<nav class="top-nav-bar registry transition-all px-4 py-2.5">
+    <div class="top-nav-container lg:container lg:px-4 text-white">
+        <div data-track="header-pulumi-logo" class="logo-nav-button" aria-haspopup="true" aria-controls="logo-nav-menu">
+            <img class="h-6" src="/images/logo/logo-on-black.svg" alt="Pulumi logo">
+            <i class="fa fa-chevron-down ml-4 pr-1 hidden lg:block"></i>
+            <div class="flex-1"></div>
+            <i class="lg:hidden fa fa-bars text-white text-2xl mobile-menu-toggle-icon"></i>
+            <i class="lg:hidden hidden fa fa-times text-white text-2xl mobile-menu-toggle-icon"></i>
+        </div>
+        <ul id="logo-nav-menu" role="menu" class="logo-nav-menu hidden">
+            <li role="none"><a role="menuitem" href="/">Pulumi Home</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/docs/get-started" }}">Get Started</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/cloud-engineering" }}">Cloud Engineering</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/product" }}">Products</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/pricing" }}">Pricing</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/docs" }}">Docs</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/blog" }}">Blog</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/learn" }}">Learn Pulumi</a></li>
+            <li role="none"><a role="menuitem" href="{{ relref . "/resources" }}">Events & Workshops</a></li>
+            <ul role="menu" class="sm:hidden">
+                <li role="none"><a role="menuitem" href="https://github.com/pulumi/pulumi">GitHub</a></li>
+                <li role="none"><a role="menuitem" href="https://slack.pulumi.com">Slack</a></li>
+                <li role="none"><a role="menuitem" href="{{ relref . "/registry" }}">Registry</a></li>
+                <li role="none"><a role="menuitem" href="https://app.pulumi.com">Sign In</a></li>
+            </ul>
+        </ul>
+        <a class="get-started-header-button" href="{{ relref . " /docs/get-started" }}">Get Started</a>
+        <div class="flex-1"></div>
+        <ul class="hidden w-full lg:flex lg:w-1/2 justify-end items-center order-first lg:order-last">
+            <li class="github-widget mr-8">
+                <a data-track="header-github-pulumi" class="github-button" href="https://github.com/pulumi/pulumi"
+                   data-size="small" data-show-count="true" aria-label="Star pulumi/pulumi on GitHub">
+                    Star
+                </a>
+            </li>
+            <li class="mr-8">
+                <a data-track="header-slack" href="https://slack.pulumi.com/">
+                    <i class="fab fa-slack"></i>
+                    Slack
+                </a>
+            </li>
+            <li class="mr-8">
+                <a data-track="header-github" href="{{ relref . "/docs" }}">
+                    <i class="fas fa-book mr-0.5"></i>
+                    Docs
+                </a>
+            </li>
+            <li class="mr-8">
+                <a data-track="header-github" href="{{ relref . "/registry" }}">
+                <i class="fas fa-archive mr-0.5"></i>
+                Registry
+                </a>
+            </li>
+            <li><a data-track="header-console" href="https://app.pulumi.com/" target="_blank">
+                <i class="fas fa-user-circle"></i>
+                Sign In
+            </a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="logo-nav-bg-mask hidden"></div>
+
+<header class="header-container registry-hero">
+    <div class="hide-on-pinned">
+        <div class="dot-background-container">
+            <div class="dot-background no-animate"></div>
+        </div>
+        <div class="dot-overlay"></div>
+    </div>
+
+<div class="search-header container flex">
+    <div class="header-pinned-container hidden md:flex xl:w-3/12 px-4 lg:px-8 xl:px-5">
+        <div class="header-hero-title pr-3">
+            <div class="flex items-center">
+                <a href="{{ relref . " /registry" }}">
+                    <i class="fas fa-archive title-icon"></i>
+                </a>
+                <a href="{{ relref . " /registry" }}">
+                    {{/* Only use an h1 on the index page. */}}
+                    {{ if eq .Title "Pulumi Registry"}}
+                    <h1 class="title-text-content no-anchor">Pulumi Registry</h1>
+                    {{ else }}
+                    <span class="title-text-content">Pulumi Registry</span>
+                    {{ end }}
+                </a>
+            </div>
+        </div>
+        <div class="header-pinned items-center transition-all hidden">
+            <img class="h-6 mr-12" src="/images/logo/logo-on-white.svg" alt="Pulumi logo" />
+            <div class="get-started-pinned-search-container">
+                <a class="get-started-pinned-search-button" data-track="get-started-pinned-search" 
+                href="{{ relref . "/docs/get-started" }}">Get Started</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+            (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+            e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+        _st('install','xxxQB1LC9DE212h8eJmh','2.0.0');
+    </script>
+    <div id="search-container" class="search-container bg-white mt-4 md:mt-0 flex justify-center lg:ml-6">
+        <div id="search-form" class="search-widget text-gray-600 focus-within:text-gray-700">
+            <form class="relative flex">
+                <i class="fas fa-search absolute inset-y-0 flex items-center pl-3" style="color: inherit"></i>
+                <input
+                        id="search-query"
+                        type="text"
+                        class="st-default-search-input registry text-sm transition"
+                        placeholder="Search..." />
+                <button type="submit" class="hidden md:block bg-blue-600 font-display font-normal text-lg text-white p-1.5 px-4 rounded-r">Search</button>
+            </form>
+            <div id="search-results" class="relative"></div>
+        </div>
+    </div>
+    <script>
+        // We want to restrict the results to just the ones from the registry.
+        // Create a MutationObserver and attach it to the #search-results container above.
+        // The `subtree` modifications property will allow our callback to be called
+        // whenever search result nodes (the `<a>` tag elements) will be added to the
+        // container.
+        const observer = new MutationObserver((mutations, observer) => {
+            mutations.forEach(mutation => {
+                mutation.addedNodes.forEach(n => {
+                    // Remove the result if its URL does not contain `registry`.
+                    // We can make this a bit more restrictive if we need to later.
+                    if (n.classList.contains("st-ui-result") && !n.href.includes("registry")) {
+                        n.remove();
+                    }
+                });
+            });
+        });
+
+        // Start listening for DOM mutation events for the search results.
+        observer.observe(
+            document.querySelector("#search-container #search-results"),
+            {
+                attributes: false,
+                childList: true,
+                subtree: true,
+            },
+        );
+    </script>
+</div>
+</header>

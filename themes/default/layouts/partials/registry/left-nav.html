@@ -1,0 +1,5 @@
+{{ $directories := (split .Page.File "/")}}
+{{ $packageName := index $directories 2 }}
+{{ $baseDirectory := printf "/registry/packages/%s/api-docs/" $packageName }}
+
+<pulumi-api-doc-filterable-nav base-directory={{ $baseDirectory }} package-name={{ $packageName }}></pulumi-api-doc-filterable-nav>
