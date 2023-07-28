@@ -10,5 +10,5 @@ publisher: Huawei
 repo_url: https://github.com/huaweicloud/pulumi-huaweicloud
 schema_file_path: provider/cmd/pulumi-resource-huaweicloud/schema.json
 title: huaweicloud
-updated_on: 1677550642
-version: v0.0.7
+updated_on: 1690509771
+version: v0.0.8
